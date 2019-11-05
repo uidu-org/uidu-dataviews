@@ -1,2 +1,36 @@
 # uidu-dataviews
-Collection of presaved data-views for reading your data
+
+Collection of presaved dataviews for reading your data.
+
+## Example configuration
+
+```yaml
+# Visible to organization, localized
+name:
+  en: Latest donations
+  it: Ultime donazioni
+# Available kinds @uidu/data-views
+kind: table
+# To which scope this dataview is available
+scopes:
+  - donations
+# Default sorters applied to this view <fieldname>:<sortDirection>
+sorters:
+  - createdAt:desc
+# Default filters applied to this view <fieldname> <filter> <filterValue>
+filters:
+  - groupId is slug
+  - groupId is volunteers,donors,corporates
+# Fields that need to be created for this view to work
+fields:
+  - name:
+      en:
+      it:
+    kind:
+    options:
+  - name:
+      en:
+      it:
+    kind:
+    options:
+```
