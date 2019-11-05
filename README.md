@@ -13,10 +13,6 @@ name:
 # Available kinds @uidu/data-views
 kind: table
 
-# To which scope this dataview is available
-scopes:
-  - donations
-
 # Default sorters applied to this view <fieldname>:<sortDirection>
 sorters:
   - createdAt:desc
